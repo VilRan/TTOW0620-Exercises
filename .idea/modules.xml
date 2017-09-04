@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/exercise-1/exercise-1.iml" filepath="$PROJECT_DIR$/exercise-1/exercise-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercise-1/exercise-1.iml" filepath="$PROJECT_DIR$/exercise-1/exercise-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/implicit-intents/implicit-intents.iml" filepath="$PROJECT_DIR$/implicit-intents/implicit-intents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/list-view/list-view.iml" filepath="$PROJECT_DIR$/list-view/list-view.iml" />
     </modules>
   </component>
 </project>
