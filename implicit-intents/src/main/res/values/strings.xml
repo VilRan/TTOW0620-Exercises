@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Implicit-Intents</string>
+    <string name="locationLabel">Give a location (lat, lng):</string>
+    <string name="showMapButton">Show map</string>
+</resources>
