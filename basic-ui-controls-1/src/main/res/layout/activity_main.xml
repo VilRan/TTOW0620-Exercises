@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="fi.jamk.basic_ui_controls_1.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/foodRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/meatballsRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meatballs"/>
+        <RadioButton
+            android:id="@+id/chickenRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chicken"/>
+        <RadioButton
+            android:id="@+id/fishRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fish"/>
+        <RadioButton
+            android:id="@+id/steakRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/steak"/>
+        <RadioButton
+            android:id="@+id/carrotsRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carrots"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/foodSelectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="foodSelectButtonClicked"
+        android:text="@string/select"
+        app:layout_constraintTop_toBottomOf="@id/foodRadioGroup"/>
+
+</android.support.constraint.ConstraintLayout>

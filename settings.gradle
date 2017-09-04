@@ -1,1 +1,1 @@
-include ':app', ':exercise-1'
+include ':app', ':exercise-1', ':basic-ui-controls-1'

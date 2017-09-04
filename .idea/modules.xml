@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TTOW0620-Exercises.iml" filepath="$PROJECT_DIR$/TTOW0620-Exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TTOW0620-Exercises.iml" filepath="$PROJECT_DIR$/TTOW0620-Exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic-ui-controls-1/basic-ui-controls-1.iml" filepath="$PROJECT_DIR$/basic-ui-controls-1/basic-ui-controls-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercise-1/exercise-1.iml" filepath="$PROJECT_DIR$/exercise-1/exercise-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercise-1/exercise-1.iml" filepath="$PROJECT_DIR$/exercise-1/exercise-1.iml" />
     </modules>
   </component>
