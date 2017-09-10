@@ -19,7 +19,8 @@
             <TextView
                 android:text="@string/passwordLabel"/>
             <EditText
-                android:id="@+id/passwordField"/>
+                android:id="@+id/passwordField"
+                android:inputType="textPassword"/>
         </TableRow>
         <TableRow>
             <Button
