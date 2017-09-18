@@ -9,9 +9,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/audio-list" />
             <option value="$PROJECT_DIR$/basic-ui-controls-1" />
             <option value="$PROJECT_DIR$/basic-ui-controls-2" />
             <option value="$PROJECT_DIR$/exercise-1" />
+            <option value="$PROJECT_DIR$/image-loader" />
             <option value="$PROJECT_DIR$/implicit-intents" />
             <option value="$PROJECT_DIR$/list-view" />
           </set>
