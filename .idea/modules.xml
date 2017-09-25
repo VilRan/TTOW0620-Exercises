@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TTOW0620-Exercises.iml" filepath="$PROJECT_DIR$/TTOW0620-Exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activity-state/activity-state.iml" filepath="$PROJECT_DIR$/activity-state/activity-state.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/audio-list/audio-list.iml" filepath="$PROJECT_DIR$/audio-list/audio-list.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic-ui-controls-1/basic-ui-controls-1.iml" filepath="$PROJECT_DIR$/basic-ui-controls-1/basic-ui-controls-1.iml" />
@@ -12,6 +13,8 @@
       <module fileurl="file://$PROJECT_DIR$/implicit-intents/implicit-intents.iml" filepath="$PROJECT_DIR$/implicit-intents/implicit-intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/list-view/list-view.iml" filepath="$PROJECT_DIR$/list-view/list-view.iml" />
       <module fileurl="file://$PROJECT_DIR$/picasso/picasso.iml" filepath="$PROJECT_DIR$/picasso/picasso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picasso/picasso.iml" filepath="$PROJECT_DIR$/picasso/picasso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/youtube-api/youtube-api.iml" filepath="$PROJECT_DIR$/youtube-api/youtube-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/youtube-api/youtube-api.iml" filepath="$PROJECT_DIR$/youtube-api/youtube-api.iml" />
     </modules>
   </component>
