@@ -16,6 +16,8 @@
             <option value="$PROJECT_DIR$/image-loader" />
             <option value="$PROJECT_DIR$/implicit-intents" />
             <option value="$PROJECT_DIR$/list-view" />
+            <option value="$PROJECT_DIR$/picasso" />
+            <option value="$PROJECT_DIR$/youtube-api" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

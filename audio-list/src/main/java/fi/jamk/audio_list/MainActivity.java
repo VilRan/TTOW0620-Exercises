@@ -1,8 +1,12 @@
 package fi.jamk.audio_list;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Environment;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,27 +32,31 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		listView = (ListView) findViewById(R.id.listView);
-		mediaPath = Environment.getExternalStorageDirectory().getPath() + "/Music/";
+		if (isReadStoragePermissionGranted()) {
+			loadSongs();
+		}
+	}
 
-		listView.setOnItemClickListener(
-			new AdapterView.OnItemClickListener() {
-				@Override
-				public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-					try {
-						mediaPlayer.reset();
-						mediaPlayer.setDataSource(songs.get(position));
-						mediaPlayer.prepare();
-						mediaPlayer.start();
-					} catch (IOException e) {
-						Toast.makeText(getBaseContext(), "Cannot start audio!", Toast.LENGTH_SHORT).show();
-					}
-				}
+	public  boolean isReadStoragePermissionGranted() {
+		if (Build.VERSION.SDK_INT >= 23) {
+			if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+				return true;
+			} else {
+				ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+				return false;
 			}
-		);
+		}
+		else {
+			return true;
+		}
+	}
 
-		task = new LoadSongsTask();
-		task.execute();
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+		if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+			loadSongs();
+		}
 	}
 
 	@Override
@@ -57,6 +65,30 @@ public class MainActivity extends AppCompatActivity {
 		if (mediaPlayer.isPlaying()) {
 			mediaPlayer.reset();
 		}
+	}
+
+	private void loadSongs() {
+		listView = (ListView) findViewById(R.id.listView);
+		mediaPath = Environment.getExternalStorageDirectory().getPath() + "/Music/";
+
+		listView.setOnItemClickListener(
+				new AdapterView.OnItemClickListener() {
+					@Override
+					public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+						try {
+							mediaPlayer.reset();
+							mediaPlayer.setDataSource(songs.get(position));
+							mediaPlayer.prepare();
+							mediaPlayer.start();
+						} catch (IOException e) {
+							Toast.makeText(getBaseContext(), "Cannot start audio!", Toast.LENGTH_SHORT).show();
+						}
+					}
+				}
+		);
+
+		task = new LoadSongsTask();
+		task.execute();
 	}
 
 	private class LoadSongsTask extends AsyncTask<Void, String, Void> {

@@ -11,6 +11,8 @@
       <module fileurl="file://$PROJECT_DIR$/image-loader/image-loader.iml" filepath="$PROJECT_DIR$/image-loader/image-loader.iml" />
       <module fileurl="file://$PROJECT_DIR$/implicit-intents/implicit-intents.iml" filepath="$PROJECT_DIR$/implicit-intents/implicit-intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/list-view/list-view.iml" filepath="$PROJECT_DIR$/list-view/list-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picasso/picasso.iml" filepath="$PROJECT_DIR$/picasso/picasso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/youtube-api/youtube-api.iml" filepath="$PROJECT_DIR$/youtube-api/youtube-api.iml" />
     </modules>
   </component>
 </project>
