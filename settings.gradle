@@ -1,1 +1,1 @@
-include ':app', ':exercise-1', ':basic-ui-controls-1', ':basic-ui-controls-2', ':implicit-intents', ':list-view', ':image-loader', ':audio-list', ':youtube-api', ':picasso', ':activity-state', ':shopping-list'
+include ':app', ':exercise-1', ':basic-ui-controls-1', ':basic-ui-controls-2', ':implicit-intents', ':list-view', ':image-loader', ':audio-list', ':youtube-api', ':picasso', ':activity-state', ':shopping-list', ':golf-map'

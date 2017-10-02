@@ -1,0 +1,26 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=75:17:68:D8:54:57:68:6B:0B:29:1D:A0:5B:48:77:4D:3F:6B:E2:55%3Bfi.jamk.golf_map
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    75:17:68:D8:54:57:68:6B:0B:29:1D:A0:5B:48:77:4D:3F:6B:E2:55
+
+    SHA-1 certificate fingerprint:
+    75:17:68:D8:54:57:68:6B:0B:29:1D:A0:5B:48:77:4D:3F:6B:E2:55
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+         AIzaSyDR-YTP0zm6ghx3CKOZbhOLjv5QiYQsTrU
+    </string>
+</resources>
