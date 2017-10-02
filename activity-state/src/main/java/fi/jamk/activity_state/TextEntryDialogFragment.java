@@ -52,6 +52,5 @@ public class TextEntryDialogFragment extends DialogFragment {
                 }
             });
         return builder.create();
-
     }
 }
