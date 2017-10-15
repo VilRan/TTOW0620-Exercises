@@ -11,12 +11,8 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-	// fields
-	private RecyclerView mRecyclerView;
 	private StaggeredGridLayoutManager mStaggeredLayoutManager;
-	private GolfCourseWishListAdapter mAdapter;
 	private boolean isListView = true;
-	private Menu menu;
 	// hard coded data
 	public static ArrayList<Place> places = Places.placeList();
 
@@ -25,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+		RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 		mStaggeredLayoutManager = new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL);
 		mRecyclerView.setLayoutManager(mStaggeredLayoutManager);
 
-		mAdapter = new GolfCourseWishListAdapter(this);
+		GolfCourseWishListAdapter mAdapter = new GolfCourseWishListAdapter(this);
 		mRecyclerView.setAdapter(mAdapter);
 	}
 
@@ -37,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.menu, menu);
-		this.menu = menu;
 		return true;
 	}
 

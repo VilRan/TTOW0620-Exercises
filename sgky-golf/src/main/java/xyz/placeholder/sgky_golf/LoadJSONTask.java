@@ -11,16 +11,15 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class LoadJSONTask extends AsyncTask<String, Void, JSONObject>{
-
+class LoadJSONTask extends AsyncTask<String, Void, JSONObject>{
 	// define callback listener
 	private LoadJSONTaskListener mListener;
 
-	public interface LoadJSONTaskListener {
-		public void onPostExecuteConcluded(JSONObject result);
+	interface LoadJSONTaskListener {
+		void onPostExecuteConcluded(JSONObject result);
 	}
 
-	final public void setListener(LoadJSONTaskListener listener) {
+	final void setListener(LoadJSONTaskListener listener) {
 		mListener = listener;
 	}
 
@@ -40,9 +39,7 @@ public class LoadJSONTask extends AsyncTask<String, Void, JSONObject>{
 			}
 			bufferedReader.close();
 			json = new JSONObject(stringBuilder.toString());
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (JSONException e) {
+		} catch (IOException | JSONException e) {
 			e.printStackTrace();
 		} finally {
 			if (urlConnection != null) urlConnection.disconnect();

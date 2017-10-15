@@ -1,3 +1,5 @@
 <resources>
 	<string name="app_name">SGKY-Golf</string>
+	<string name="showOnMap">Näytä kartalla</string>
+	<string name="toolbarTitle">SGKY - Kentät</string>
 </resources>

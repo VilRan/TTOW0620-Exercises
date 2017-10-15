@@ -15,11 +15,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder> {
+class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder> {
 	private JSONArray mCourses;
 	private Context mContext;
 
-	public CourseAdapter(JSONArray courses, Context context) {
+	CourseAdapter(JSONArray courses, Context context) {
 		this.mCourses = courses;
 		this.mContext = context;
 	}
@@ -50,20 +50,20 @@ public class CourseAdapter extends RecyclerView.Adapter<CourseAdapter.ViewHolder
 		}
 	}
 
-	public class ViewHolder extends RecyclerView.ViewHolder {
-		public ImageView courseImageView;
-		public TextView courseNameTextView;
-		public TextView courseAddressTextView;
-		public TextView coursePhoneTextView;
-		public TextView courseEmailTextView;
+	class ViewHolder extends RecyclerView.ViewHolder {
+		ImageView courseImageView;
+		TextView courseNameTextView;
+		TextView courseAddressTextView;
+		TextView coursePhoneTextView;
+		TextView courseEmailTextView;
 
-		public ViewHolder(View itemView) {
+		ViewHolder(View itemView) {
 			super(itemView);
-			courseImageView = (ImageView) itemView.findViewById(R.id.courseImageView);
-			courseNameTextView = (TextView) itemView.findViewById(R.id.courseNameTextView);
-			courseAddressTextView = (TextView) itemView.findViewById(R.id.courseAddressTextView);
-			coursePhoneTextView = (TextView) itemView.findViewById(R.id.coursePhoneTextView);
-			courseEmailTextView = (TextView) itemView.findViewById(R.id.courseEmailTextView);
+			courseImageView = itemView.findViewById(R.id.courseImageView);
+			courseNameTextView = itemView.findViewById(R.id.courseNameTextView);
+			courseAddressTextView = itemView.findViewById(R.id.courseAddressTextView);
+			coursePhoneTextView = itemView.findViewById(R.id.coursePhoneTextView);
+			courseEmailTextView = itemView.findViewById(R.id.courseEmailTextView);
 			// item click handler
 			itemView.setOnClickListener(new View.OnClickListener(){
 				@Override

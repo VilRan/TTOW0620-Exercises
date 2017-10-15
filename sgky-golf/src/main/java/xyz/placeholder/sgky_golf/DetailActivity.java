@@ -58,7 +58,7 @@ public class DetailActivity extends AppCompatActivity {
 			// map
 			TextView courseMapTextView = (TextView) findViewById(R.id.courseMapTextView);
 			courseMapTextView.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
-			courseMapTextView.setText("Näytä kartalla");
+			courseMapTextView.setText(R.string.showOnMap);
 			courseMapTextView.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {

@@ -14,20 +14,20 @@ import com.bumptech.glide.Glide;
 class GolfCourseWishListAdapter extends RecyclerView.Adapter<GolfCourseWishListAdapter.ViewHolder> {
 	private Context mContext;
 
-	public GolfCourseWishListAdapter(Context context) {
+	GolfCourseWishListAdapter(Context context) {
 		this.mContext = context;
 	}
 
-	public class ViewHolder extends RecyclerView.ViewHolder {
-		public LinearLayout placeNameHolder;
-		public TextView placeName;
-		public ImageView placeImage;
+	class ViewHolder extends RecyclerView.ViewHolder {
+		LinearLayout placeNameHolder;
+		TextView placeName;
+		ImageView placeImage;
 
-		public ViewHolder(View itemView) {
+		ViewHolder(View itemView) {
 			super(itemView);
-			placeName = (TextView) itemView.findViewById(R.id.placeName);
-			placeNameHolder = (LinearLayout) itemView.findViewById(R.id.placeNameHolder);
-			placeImage = (ImageView) itemView.findViewById(R.id.placeImage);
+			placeName = itemView.findViewById(R.id.placeName);
+			placeNameHolder = itemView.findViewById(R.id.placeNameHolder);
+			placeImage = itemView.findViewById(R.id.placeImage);
 		}
 	}
 

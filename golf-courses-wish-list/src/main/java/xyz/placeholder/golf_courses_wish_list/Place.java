@@ -2,11 +2,11 @@ package xyz.placeholder.golf_courses_wish_list;
 
 import android.content.Context;
 
-public class Place {
+class Place {
 	public String name;
-	public String imageName;
+	String imageName;
 
-	public int getImageResourceId(Context context) {
+	int getImageResourceId(Context context) {
 		return context.getResources().getIdentifier(this.imageName, "drawable", context.getPackageName());
 	}
 }

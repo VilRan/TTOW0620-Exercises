@@ -2,18 +2,18 @@ package xyz.placeholder.golf_courses_wish_list;
 
 import java.util.ArrayList;
 
-public class Places {
-	public static String[] placeNameArray = {
+class Places {
+	private static String[] placeNameArray = {
 		"Black Mountain", "Chambers Bay", "Clear Water", "Harbour Town",
 		"Muirfield", "Old Course", "Pebble Beach", "Spy Class", "Turtle Bay"
 	};
 
-	public static ArrayList<Place> placeList() {
+	static ArrayList<Place> placeList() {
 		ArrayList<Place> list = new ArrayList<>();
-		for (int i = 0; i < placeNameArray.length; i++) {
+		for (String placeName : placeNameArray) {
 			Place place = new Place();
-			place.name = placeNameArray[i];
-			place.imageName = placeNameArray[i].replaceAll("\\s+", "").toLowerCase();
+			place.name = placeName;
+			place.imageName = placeName.replaceAll("\\s+", "").toLowerCase();
 			list.add(place);
 		}
 		return list;

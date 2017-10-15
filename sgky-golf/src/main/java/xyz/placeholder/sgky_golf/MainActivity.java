@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 		// set toolbar title
 		CollapsingToolbarLayout collapsingToolbarLayout =  (CollapsingToolbarLayout) findViewById(R.id.main_collapsing);
-		collapsingToolbarLayout.setTitle("SGKY - Kentät");
+		collapsingToolbarLayout.setTitle(getString(R.string.toolbarTitle));
 
 		// define LoadJSONTask object
 		LoadJSONTask loadJSONTask = new LoadJSONTask();
