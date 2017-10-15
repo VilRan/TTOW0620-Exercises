@@ -43,6 +43,7 @@ public class MainActivity
 		((ListView) findViewById(R.id.list)).setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 			@Override
 			public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+
 				return false;
 			}
 		});
